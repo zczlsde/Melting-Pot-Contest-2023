@@ -135,6 +135,7 @@ if __name__ == "__main__":
 
   # Setup WanDB 
   if "WANDB_API_KEY" in os.environ and args.wandb:
+    os.environ["WANDB_API_KEY"] = "51ef5838ea3afe52e3fabf4650bab29aa84cfffb"
     wandb_project = f'{args.exp}_{args.framework}'
     wandb_group = "meltingpot"
 
