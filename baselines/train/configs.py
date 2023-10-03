@@ -81,7 +81,7 @@ def get_experiment_config(args, default_config):
         "lstm_use_prev_action": True,
         "lstm_use_prev_reward": False,
         "lstm_cell_size": 2,
-        "shared_policy": False,
+        "shared_policy": True,
 
         # experiment trials
         "exp_name": args.exp,
