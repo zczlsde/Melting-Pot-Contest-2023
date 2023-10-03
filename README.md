@@ -1,3 +1,8 @@
+```
+python baselines/train/run_ray_train.py --num_workers 2 --num_gpus 1 --exp clean_up --wandb True
+```
+
+
 # Melting Pot Contest @ Neurips 2023
 Official Repository for Melting Pot Contest Experiments
 
