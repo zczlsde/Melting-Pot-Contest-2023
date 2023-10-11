@@ -1,7 +1,10 @@
 ```
 python baselines/train/run_ray_train.py --num_workers 2 --num_gpus 1 --exp clean_up --wandb True
 ```
-
+Below is the command for evaluation:
+```
+python baselines/evaluation/evaluate.py --num_episodes 2 --eval_on_scenario True --scenario clean_up_2 --config_dir results/torch/clean_up/PPO_meltingpot_dafd2_00000_0_2023-10-03_14-00-40  --policies_dir results/torch/clean_up/PPO_meltingpot_dafd2_00000_0_2023-10-03_14-00-40/checkpoint_000750/policies
+```
 
 # Melting Pot Contest @ Neurips 2023
 Official Repository for Melting Pot Contest Experiments
