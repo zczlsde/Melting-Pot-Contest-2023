@@ -163,6 +163,11 @@ if __name__ == "__main__":
 
 
   # Setup checkpointing configurations
+  # see https://github.com/ray-project/ray/blob/e4612affee5f0c863879248096a4f289ef52d7ad/python/ray/air/config.py for details
+
+  # Add checkpoint_score_attribute for the signal of best checkpoint
+  # ckpt_config = air.CheckpointConfig(num_to_keep=exp_config['keep'], checkpoint_frequency=exp_config['freq'], 
+  #                                   checkpoint_at_end=exp_config['end'], checkpoint_score_attribute="episode_reward_mean")
   ckpt_config = air.CheckpointConfig(num_to_keep=exp_config['keep'], checkpoint_frequency=exp_config['freq'], 
                                      checkpoint_at_end=exp_config['end'])
 
